@@ -1,0 +1,64 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.clock {
+  display: flex;
+  border: 2px solid rgb(206, 195, 195);
+  background-color: rgb(145, 183, 101);
+}
+.clock div {
+  margin: 20px;
+  flex-direction: column;
+  display: flex;
+  width: 70px;
+  height: 50px;
+}
+#hour,
+#second,
+#minute,
+#AmPm {
+  font-size: 25px;
+  margin-left: 20px;
+  width: 40px;
+  height: 30px;
+  color: azure;
+}
+#text {
+  text-align: center;
+  font-size: 15px;
+  background-color: rgb(220, 220, 239);
+  text-transform: capitalize;
+  width: 70px;
+  height: 20px;
+}
+/* for small screens */
+@media (max-width: 992px) {
+  h2 {
+    color: rgb(25, 22, 22);
+    text-transform: capitalize;
+    font-size: 25px;
+  }
+  .clock div {
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
+    width: 50px;
+    height: 30px;
+  }
+}
